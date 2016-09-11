@@ -6,6 +6,32 @@
     <meta http-equiv ="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ristorante Con Fusion</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+      
+      //Show/Hide auto advertisement
+/*$(function(){
+                function animate_adver()
+                {
+                            $("#label_adver").show("slow").animate({right: '+=40px'}).animate({right: '0px'}).hide("slow",animate_adver);
+                }
+    animate_adver();
+    });
+      
+  $(function() {
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+  });*/
+  </script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
@@ -36,6 +62,23 @@
                                 ĐĂNG KÝ
                             </a>
                         </li>
+                        
+                        <li class="shopping-cart">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <strong> 0</strong>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="shopping-cart">
+                            <a href="#">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <strong> 0</strong>
+                            </a>
+                        </li>
+                        
+                        
                     </ul>
              
                 </div> 
@@ -172,14 +215,14 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">TRANG CHỦ</a></li>
                         <li><a href="aboutus.html">
-                            LỊCH</a></li>
+                            GIỚI THIỆU</a></li>
 
                             <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                              role="button" aria-haspopup="true" aria-expanded="false">
                              BÚT</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">BÚT BI</a></li>
+                                <li><a href="#">GIÀY</a></li>
                                 <li><a href="#">Main Courses</a></li>
                                 <li><a href="#">Desserts</a></li>
                                 <li><a href="#">Drinks</a></li>
@@ -191,9 +234,10 @@
                         </li>
 
 
-                        <li><a href="contact.html">HỘP BÚT</a></li>
-                        <li><a href="contact.html">TẨY</a></li>
+                        <li><a href="contact.html">BALO</a></li>
+                        <li><a href="contact.html">TÚI XÁCH</a></li>
                         <li><a href="contact.html">KHUYẾN MÃI</a></li>
+                        <li><a href="contact.html">TIN TỨC</a></li>
                     </ul>
                     
                     <ul class="nav navbar-nav navbar-right">
@@ -294,33 +338,91 @@
          <!-- Carousel with no transition-->
         <div class="row row_slide">
             <div class="col-xs-12 col-md-12">
-                <div id="mycarousel_new_product" class="carousel" data-ride="carousel">
+                <div id="mycarousel_new_product" class="carousel slide multi-item-carousel">
                     
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner">
                         
                         <div class="item active">
-                                    <div class="col-xs-12 col-md-3">
-                                        <div class="thumbnail">
-                    <a href="#">
-                        <img class="media-object img-thumbnail" src="img/alberto.png" width="130px" height="130px" alt="Alberto Somayya">
-                    </a>
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/lich5.jpg" alt="Alberto Somayya">
+                                    </a>
 
-                    <div class="caption">
-                       
-                        <h4>Excutive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide
-                             International experience having worked closely with
-                             
-                        </p>
-                        <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
-                    </div>
-                </div>
-                                    </div>
-                            
-                        </div>
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía : 300.000 VNĐ
+                                    </p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
                         
-                               
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Butbi4.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía : 300.000 VNĐ</p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich7.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía : 300.000 VNĐ</p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demoabc</h4>
+                                    <p>Gía : 300.000 VNĐ</p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch xyz</h4>
+                                    <p>Gía : 300.000 VNĐ</p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
                         
                         
                         
@@ -348,10 +450,202 @@
     
     </div>
     
-</div>       
+    <div class="row row_content">
+       <div id="row_sale"> 
+        <center><h2 class="tile_content">KHUYẾN MÃI</h2></center>
+        
+        <p><a href="#">Xem thêm &raquo;</a></p>
+        </div>
+      
+         <!-- Carousel with no transition-->
+        <div class="row row_slide">
+            <div class="col-xs-12 col-md-12">
+                <div id="mycarousel_sale" class="carousel slide multi-item-carousel">
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        
+                        <div class="item active">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/lich5.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
+                                    <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
+                                    
+                                    <a class="btn btn-primary btn-xs" href="#"> Xem thêm &raquo;</a>
+                                      
+                                    </div> <!-- end of caption -->
+                                    
+                                </div> <!-- end of thumnail -->
+                                
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Butbi4.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
+                                    <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich7.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
+                                    <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
+                                    <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demoabc</h4>
+                                    <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
+                                    <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
+                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div>
+                        
+                    </div>
+                    
+                     <a class="left carousel-control" href="#mycarousel_sale" role
+                  ="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden
+                      ="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#mycarousel_sale" role
+                  ="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden
+                      ="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+                </div>
+            </div>
+        </div>
+        
+    
+    <!-- End of carousel -->
+    
+    </div>
+
+</div> 
+    
+    
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <h5>Trợ giúp</h5>
+                    <ul class="list-unstyled">
+                        <lif><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Giao hàng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-xs-12 col-md-3">
+                    <h5>Bảo hành và đổi trả</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Điều khoản bảo hành</a></li>
+                        <li><a href="#">Quy định đổi trả</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-xs-12 col-md-3">
+                    <h5>Công ty</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Đối tác</a></li>
+                        <li><a href="#">Quy định đổi trả</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <h5>Liên hệ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Cửa hàng</a></li>
+                        <li><a href="#">Hotline</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Kết nối</a>
+                        <a class="btn btn-xs btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                            
+                        <a class="btn btn-xs btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                            
+                        <a class="btn btn-xs btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            
+                        <a class="btn btn-xs btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <p><b>Bản quyền thuộc về Vascara © 2016</b></p>
+                    <p><b>CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ VASCARA (VASCARA CO., LTD)</b></p>
+                    <p>Địa chỉ: Lầu 04, tòa nhà ACM - số 96 Cao Thắng, phường 04, quận 03, TP. HCM</p> 
+                    <p>Điện thoại: <b>1800 6909</b>, email: <b>customerservices@vascara.com</b> </p>
+                    <p>Số giấy chứng nhận đăng ký kinh doanh: 0304084107 do Sở kế hoạch và đầu tư TP. Hồ Chí Minh cấp lần đầu ngày 14/11/2005, thay đổi lần thứ 8 ngày 30/07/2015
+                    <p>Người đại diện: Ông Nguyễn Đức Mạnh</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/myjs.js"></script>
+<script src="js/myjs_plans.js">
+    
+    </script>
 </body>
 
 </html>
