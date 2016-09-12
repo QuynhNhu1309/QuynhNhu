@@ -4,12 +4,14 @@
 }
 
 .row_nav{
-    min-height: 110px;
+    min-height: 100px;
     margin:0px auto;
-    padding: 30px 0px 50px 0px;
-    border-bottom: 1px dotted;
+    padding: 30px 0px 30px 0px;
 }
 
+hr{
+    border-color:black;
+}
 .row_slide {
     margin:0px auto;
     padding: 10px 0px 10px 0px;
@@ -24,8 +26,8 @@
     margin-top:50px;
 }
 
-.row_content h2{
-    width:300px;
+.title_product h2{
+    width:400px;
     margin-top:-30px;
     background:white;
     
@@ -47,129 +49,78 @@
 }
 
 
-/* Carousel for new product */
+/* Carousel for row_content */
 
-#mycarousel_new_product .carousel-inner .item .thumbnail{
+
+.row_content .thumbnail{
     display:inline-block;
     padding-top:10%;
     float: none;
     border: 0 none;
     box-shadow: none;
 }
-#mycarousel_new_product .carousel-inner .item .thumbnail .img-thumbnail{
+.row_content .img-thumbnail{
     width :160px;
     height:160px;
 }
 
-#mycarousel_new_product .carousel-inner .item {
+.row_content .item{
     top : 0;
     left : 0;
-    min-height : 300;
+    min-height : 320;
 }
 
-#mycarousel_new_product .item .col-md-2{
+.row_content .item .col-md-2{
 
-    margin-left: 0%;
+    margin-left: 1%;
+    width: 18%;
 }
 
-#mycarousel_new_product .active{
-
-    padding-left: 0%;
+.row_content .item.active{
+    width: 100%;
+    padding-left: 4%;
 }
 
 
-#mycarousel_new_product {
-        background: #FFFFFF ;
-        position: relative;
-        padding: 10px;     /* Shows as a border around the carousel */
-    }
 
-#mycarousel_new_product .carousel-control.left {
+.row_content .carousel-control.left{
   background-image:none;
-    color: crimson;
+    color: red;
     margin-left: -60px;
 }   
 
-#mycarousel_new_product .carousel-control.right{
+.row_content .carousel-control.right{
      background-image:none;
-    color: crimson;
+    color:red;
     margin-right: -60px;
 }
-
-
-/* Removing Bootstrap 3 Carousel Background Gradient */
-
-
-/*    */
-
-/* Carousel for sale off */
-
-#mycarousel_sale .carousel-inner .item .thumbnail, .show_product .thumbnail{
-    display:inline-block;
-    padding-top:10%;
-    float: none;
-    border: 0 none;
-    box-shadow: none;
-    color:red;
-}
-#mycarousel_sale .carousel-inner .item .thumbnail .img-thumbnail, .show_product .thumbnail .img-thumbnail{
-    width :160px;
-    height:160px;
-}
-
-#mycarousel_sale .carousel-inner .item {
-    top : 0;
-    left : 0;
-    min-height : 300;
-}
-
-#mycarousel_sale .item .col-md-2{
-    margin-left: 0%;
-}
-
-#mycarousel_sale .active{
-    padding-left: 0%;
-}
-
-
-
-
-#mycarousel_sale {
-        background: #FFFFFF ;
-        position: relative;
-        padding: 10px;     /* Shows as a border around the carousel */
-    }
-
-#mycarousel_sale .carousel-control.right, #mycarousel_sale .carousel-control.left {
-  background-image:none;
-    color: crimson;
-}   /* Removing Bootstrap 3 Carousel Background Gradient */
 
 
 /* Badge*/
 #mycarousel_sale .badge{
     background:#ea2222;
+    display:relative;
+    
     
 }
 
-
-
-
-
-#row_sale a {
+.title_product a {
    margin-left:20px;
    
 }
 
-#row_sale p {
+.title_product p {
      width: 100px;
-     margin:-36px 0px 0px 20px;
+     margin:-36px 0px 0px 30px;
      float:right;
      background:white;
 }
 
 
-/*  End carousel for sale  */
+/*  End carousel for row_content  */
+
+
+
 
 
 /*  Navbar header */
@@ -244,6 +195,14 @@ text-align:left;
 }
 
 
+/* Footer-pay */
+
+#footer-pay .col-md-2{
+    margin-left:1%;
+}
+
+
+
 /* */
 
 
@@ -271,6 +230,11 @@ text-align:left;
     background-color: #eeeeee;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
+}
+#footer-brand{
+    background-color: white;
+    color:black;
+    min-height:200px;
 }
 
 .row-footer h5{

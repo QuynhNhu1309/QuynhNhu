@@ -6,9 +6,9 @@
     <meta http-equiv ="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ristorante Con Fusion</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
       
       //Show/Hide auto advertisement
@@ -69,16 +69,6 @@
                                 <strong> 0</strong>
                             </a>
                         </li>
-                        
-                        
-                        <li class="shopping-cart">
-                            <a href="#">
-                                <i class="fa fa-heart" aria-hidden="true"></i>
-                                <strong> 0</strong>
-                            </a>
-                        </li>
-                        
-                        
                     </ul>
              
                 </div> 
@@ -96,23 +86,24 @@
                     <form method="POST" action="" role="form">
 					<div class="modal-body">
                         <p style="padding-top:5px;"></p>
+                        
                         <div class="row">
 						<div class="form-group">
 							<label for="txttaikhoan" class="col-xs-12 col-md-offset-2 col-md-2 control-label">Tài khoản: </label>
                             <div class="col-xs-12 col-md-5">
 							<input id="txttaikhoan" name="txttaikhoan" class="form-control input-md" type="text" placeholder="Tên đăng nhập" />
                             </div>
-						</div>
+						</div>  
                         </div>
-                        <div class="row">
+                        
+                        <div class="row">   
 						<div class="form-group">
                             <p style="padding-top:5px;"></p>
 							<label for="txtmatkhau" class="col-xs-12 col-md-offset-2 col-md-2 control-label">Mật khẩu: </label>
                             <div class="col-xs-12 col-md-5">
 							<input id="txtmatkhau" name="txtmatkhau" class="form-control input-md" type="password" placeholder="Mật khẩu" />
                             </div>
-						</div>
-                            
+						</div>                         
                         </div>
                         <p style="padding-bottom:12px;"></p>
 					</div>
@@ -178,6 +169,7 @@
 							<input id="txtmatkhau" name="txtmatkhau" class="form-control input-md" type="password" placeholder="Mật khẩu" />
                             </div>
 						</div>
+                        </div>
                         
                         <p style="padding-top:5px;"></p>
                             
@@ -191,8 +183,8 @@
                             
                         </div>
                         <p style="padding-bottom:12px;"></p>
-					</div>
                     </div>
+                        
 					<div class="modal-footer">
                     	
 						<input type="submit" class="btn btn-primary" name = "dangky" value = 'Đăng ký' />
@@ -203,6 +195,7 @@
             </div>
         </div>
     </div>
+  <!-- content --> 
     
 <div class="container"> 
         <div class="row row_nav">
@@ -220,7 +213,7 @@
                             <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                              role="button" aria-haspopup="true" aria-expanded="false">
-                             BÚT</a>
+                             GIÀY</a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">GIÀY</a></li>
                                 <li><a href="#">Main Courses</a></li>
@@ -254,7 +247,9 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+    <hr>
+<div class='container'>    
         <!-- Slide -->
         <div class="row row_slide">
             <div class="col-xs-12 col-md-12">
@@ -280,7 +275,7 @@
                                 <span class="badge">$4.99</span>
                                 </h2>
                             <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                            <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            <p><a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a></p>
                             </div>
                             
                         </div>
@@ -334,7 +329,10 @@
     
     
      <div class="row row_content">
-         <center><h2 class="tile_content">SẢN PHẨM MỚI</h2></center>
+         <div class="title_product">
+             <center><h2>SẢN PHẨM MỚI</h2></center>
+             <p><a href="#">Xem thêm &raquo;</a></p>
+         </div>
          <!-- Carousel with no transition-->
         <div class="row row_slide">
             <div class="col-xs-12 col-md-12">
@@ -351,10 +349,12 @@
                                     </a>
 
                                     <div class="caption">
-                                    <h4>Lịch demo</h4>
-                                    <p>Gía : 300.000 VNĐ
-                                    </p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <center>
+                                        <h4>Lịch 1</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -368,9 +368,11 @@
                                     </a>
 
                                     <div class="caption">
-                                    <h4>Lịch demo</h4>
-                                    <p>Gía : 300.000 VNĐ</p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <center>
+                                        <h4>Lịch 2</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -384,9 +386,11 @@
                                     </a>
 
                                     <div class="caption">
-                                    <h4>Lịch demo</h4>
-                                    <p>Gía : 300.000 VNĐ</p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                   <center>
+                                        <h4>Lịch 3</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -400,9 +404,11 @@
                                     </a>
 
                                     <div class="caption">
-                                    <h4>Lịch demoabc</h4>
-                                    <p>Gía : 300.000 VNĐ</p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <center>
+                                        <h4>Lịch 4</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -416,9 +422,83 @@
                                     </a>
 
                                     <div class="caption">
-                                    <h4>Lịch xyz</h4>
-                                    <p>Gía : 300.000 VNĐ</p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <center>
+                                        <h4>Lịch 5</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <center>
+                                        <h4>Lịch 6</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <center>
+                                        <h4>Lịch 7</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <center>
+                                        <h4>Lịch 8</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich14.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <center>
+                                        <h4>Lịch 9</h4>
+                                        <p>Gía : 300.000 VNĐ</p>
+                                        <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </center>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -450,9 +530,10 @@
     
     </div>
     
+    
     <div class="row row_content">
-       <div id="row_sale"> 
-        <center><h2 class="tile_content">KHUYẾN MÃI</h2></center>
+        <div class="title_product">
+        <center><h2>KHUYẾN MÃI</h2></center>
         
         <p><a href="#">Xem thêm &raquo;</a></p>
         </div>
@@ -497,7 +578,7 @@
                                     <h4>Lịch demo</h4>
                                     <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
                                     <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
                 
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
@@ -515,7 +596,7 @@
                                     <h4>Lịch demo</h4>
                                     <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
                                     <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -532,7 +613,7 @@
                                     <h4>Lịch demo</h4>
                                     <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
                                     <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -549,7 +630,7 @@
                                     <h4>Lịch demoabc</h4>
                                     <p>Gía gốc: <strike>300.000 VNĐ </strike></p>
                                     <p>Gía : 270.000 VNĐ <span class="badge">-10%</span></p>
-                                    <a class="btn btn-primary btn-xs" href="#">More &raquo;</a>
+                                    <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
                                     </div> <!-- end of caption -->
                                 </div> <!-- end of thumnail -->
                             </div>    
@@ -576,25 +657,187 @@
         
     
     <!-- End of carousel -->
-    
-    </div>
-
+          
 </div> 
     
     
-    <footer class="row-footer">
+
+<div class="row row_content">
+       <div class="title_product"> 
+        <center><h2>SẢN PHẨM BÁN CHẠY</h2></center>
+        
+        <p><a href="#">Xem thêm &raquo;</a></p>
+        </div>
+      
+         <!-- Carousel with no transition-->
+        <div class="row row_slide">
+            <div class="col-xs-12 col-md-12">
+                <div id="mycarousel_hot-item" class="carousel slide multi-item-carousel">
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        
+                        <div class="item active">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/lich5.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía gốc: 300.000 VNĐ </p>
+                                    <a class="btn btn-primary btn-xs" href="#"> Xem thêm &raquo;</a>
+                                      
+                                    </div> <!-- end of caption -->
+                                    
+                                </div> <!-- end of thumnail -->
+                                
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Butbi4.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía gốc: 300.000 VNĐ </p>
+                                    <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                        
+                        <div class="item">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img class="media-object img-thumbnail" src="img/Lich7.jpg" alt="Alberto Somayya">
+                                    </a>
+
+                                    <div class="caption">
+                                    <h4>Lịch demo</h4>
+                                    <p>Gía gốc: 300.000 VNĐ </p>
+                                    <a class="btn btn-primary btn-xs" href="#">Xem thêm &raquo;</a>
+                                    </div> <!-- end of caption -->
+                                </div> <!-- end of thumnail -->
+                            </div>    
+                        </div> 
+                    
+                        
+                       
+                        
+                    </div>
+                    
+                     <a class="left carousel-control" href="#mycarousel_hot-item" role
+                  ="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden
+                      ="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#mycarousel_sale" role
+                  ="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden
+                      ="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+
+                </div>
+            </div>
+        </div>
+</div>
+    
+    <!-- End of hot item div-->
+    
+</div>
+   
+    <hr>
+    <div class="row" id="footer-pay">
         <div class="container">
+                <div class="col-xs-12 col-md-12">
+                    <div class="col-xs-12 col-md-5">
+                        <h4>CÁCH THỨC THANH TOÁN</h4>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-2">
+                                <img src="img/Visa.png">
+                            </div>
+
+                            <div class="col-xs-12 col-md-2">
+                                <img src="img/master_card.png">
+                            </div>
+
+                            <div class="col-xs-12 col-md-2">
+                                <img src="img/master_card.png">
+                            </div>
+
+                            <div class="col-xs-12 col-md-2">
+                                <img src="img/Visa.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <h4>DỊCH VỤ GIAO HÀNG</h4>
+                        <div class="row">
+                            <img src="img/giaohangnhanh.jpg">
+                        </div>
+                        
+                       <p style="padding-top:5px;"></p>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-md-3">
+                                <img src="img/vietnampost.jpg">
+                            </div>
+
+                            <div class="col-xs-12 col-md-4">
+                                <img src="img/logo-247.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-3">
+                        <h4>CHỨNG NHẬN</h4>
+                        <div class="row">
+                            <img src="img/registered.png">
+                        </div>
+                        
+                       <p style="padding-top:5px;"></p>
+                        <div class="row">
+                            <img src="img/announced.png">
+                        </div>
+                        
+                       <p style="padding-top:5px;"></p>
+                        <div class="row">
+                            <span class="icon icon-footer-norton"></span>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         </div>
+    
+    
+    
+    <!-- Footer -->
+    <footer class="row-footer">
+        
+        <div class="container">
+            
             <div class="row">
                 <div class="col-xs-12 col-md-3">
-                    <h5>Trợ giúp</h5>
+                    <h5>CHĂM SÓC KHÁCH HÀNG</h5>
                     <ul class="list-unstyled">
-                        <lif><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
                         <li><a href="#">Giao hàng</a></li>
                     </ul>
                 </div>
                 
                 <div class="col-xs-12 col-md-3">
-                    <h5>Bảo hành và đổi trả</h5>
+                    <h5>CÔNG TY CHÚNG TÔI</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Điều khoản bảo hành</a></li>
                         <li><a href="#">Quy định đổi trả</a></li>
@@ -602,45 +845,43 @@
                 </div>
                 
                 <div class="col-xs-12 col-md-3">
-                    <h5>Công ty</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Tuyển dụng</a></li>
-                        <li><a href="#">Đối tác</a></li>
-                        <li><a href="#">Quy định đổi trả</a></li>
-                    </ul>
+                    <h5>BẢN ĐỒ</h5>
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:250px;width:250px;'><div id='gmap_canvas' style='height:250px;width:250px;'></div><div><small><a href="http://www.embedgooglemaps.com">Generate your Google map here, quick and easy!									Click here									Visit our website!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/optie24/">Lees hier alle ervaringen van Optie24!</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(10.7599747,106.68211240000005),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(10.7599747,106.68211240000005)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>273 An Dương Vương, Phường 3, Quận 5, Thành Phố Hồ Chí Minh<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <h5>Liên hệ</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Cửa hàng</a></li>
-                        <li><a href="#">Hotline</a></li>
-                        <li><a href="#">Tin tức</a></li>
-                        <li><a href="#">Kết nối</a>
-                        <a class="btn btn-xs btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                    <h5>KẾT NỐI VỚI CHÚNG TÔI</h5>
+                     <a class="btn btn-xs btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
                             
                         <a class="btn btn-xs btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
                             
                         <a class="btn btn-xs btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                             
                         <a class="btn btn-xs btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <br/>
+                     <h3>CÔNG TY TINH MINX</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Công ty</a></li>
+                        <li><a href="#">Hotline</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Kết nối</a>
+                       
                         </li>
                     </ul>
                 </div>
             </div>
             
             <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <p><b>Bản quyền thuộc về Vascara © 2016</b></p>
-                    <p><b>CÔNG TY TNHH THƯƠNG MẠI VÀ DỊCH VỤ VASCARA (VASCARA CO., LTD)</b></p>
-                    <p>Địa chỉ: Lầu 04, tòa nhà ACM - số 96 Cao Thắng, phường 04, quận 03, TP. HCM</p> 
-                    <p>Điện thoại: <b>1800 6909</b>, email: <b>customerservices@vascara.com</b> </p>
-                    <p>Số giấy chứng nhận đăng ký kinh doanh: 0304084107 do Sở kế hoạch và đầu tư TP. Hồ Chí Minh cấp lần đầu ngày 14/11/2005, thay đổi lần thứ 8 ngày 30/07/2015
-                    <p>Người đại diện: Ông Nguyễn Đức Mạnh</p>
-                </div>
+                <hr style="border-color:black;">
+                <center>Bản quyền thuộc về Minx</center>
             </div>
+            
         </div>
     </footer>
+    <!-- End of footer -->
+     
+    
+    
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/myjs_plans.js">
